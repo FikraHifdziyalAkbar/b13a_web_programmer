@@ -1,0 +1,29 @@
+body{
+    background: blue;
+    color: white;
+}
+
+.tulisan_satu{
+    color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: inherit;
+    text-decoration: underline;
+}
+
+.tulisan_dua{
+    color: cyan;
+    font-style: italic;
+    text-decoration: overline;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.tulisan_tiga{
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    word-spacing: 10px;
+}

@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+
+.boxMargin{
+    background: green;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.boxMargin-dua{
+    background: black;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+    color: white;
+}
+
+.boxPadding{
+    background: greenyellow;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.boxPadding-dua{
+    background: blueviolet;
+    height: 100px;
+    width: 600px;
+    padding-left: 70px;
+}
