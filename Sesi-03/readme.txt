@@ -47,7 +47,7 @@ font => font-size   : ukuran font
         font-color  : warna
 
 Position
-    Static : Value static merupakan nilai default dari position suatu element. Value static akan membuat suatu element bertumpukan . Untuk melihat hasil dari penggunaan value static buat file html dengan code berikut.
+    Static : Value static merupakan nilai default dari position suatu element. Value static akan membuat suatu element bertumpukan.
     Relative :Value relative digunakan untuk membuat suatu element bisa dipindah pindahkan . By default elemen memang tumpukan sebagaimana pada value static, tetapi kita bisa memindahkan elemen tersebut dengan property seperti top , left. Sehingga elemen tersebut akan menindihi layernya elemen lain
     Absolute : Value absolute digunakan untuk membuat suatu elemen bisa dipindahkan dan membuat elemen mengambang ke atas dibanding element lain.
     Fixed : Value fixed digunakan untuk membuat elemen mengambang di antara elemen elemen lain dan juga bisa dipindahkan posisinya. 
