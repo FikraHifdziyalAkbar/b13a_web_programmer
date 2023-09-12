@@ -52,3 +52,12 @@ Position
     Absolute : Value absolute digunakan untuk membuat suatu elemen bisa dipindahkan dan membuat elemen mengambang ke atas dibanding element lain.
     Fixed : Value fixed digunakan untuk membuat elemen mengambang di antara elemen elemen lain dan juga bisa dipindahkan posisinya. 
 
+change credentials
+git config --global user.name ""
+git config --global user.email "@gmail.com"
+git config --global credential.username ""
+
+Mangupdate/menambah ke github 
+git add .
+git commit -m "update data"
+git push

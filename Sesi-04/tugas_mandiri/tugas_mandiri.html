@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Luas dan Keliling Lingkaran</title>
+  </head>
+  <body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+    <!-- flow -->
+    <pre>
+      #Flow
+      1. mengetahui jari2 atau diameter 
+      2. mengetahui nilai dari phi 
+      3. rumus luas lingkaran adalah phi x r x r 
+      4. rumus keliling lingkaran adalah 2 x phi x r
+    </pre>
+
+    <!-- pseudocode -->
+    <pre>
+      #Pseudocode 
+      a. Luas Lingkaran
+         1. input jari2 bertipe numberic 
+         2. nilai phi adalah 3,14
+         3. membuat variable hasilLuas bertipe numberic
+         4. memasukan input jari2
+         5. menghitung luas lingkaran dengan memasukan inputan jari2 ke rumus
+         6. rumus luas lingkaran phi x r x r 
+         7. memasukan hasil dari perhitungan luas lingkaran ke variable hasilLuas
+         8. menampilkan variable hasilLuas
+      
+      b. Keliling Lingkaran
+         1. input jari2 bertipe numberic
+         2. nilai phi adalah 3,14
+         3. membuat variable hasilKeliling bertipe numberic
+         4. memasukan input jari2
+         5. menghitung keliling lingkaran dengan memasukan inputan jari2 ke rumus
+         6. rumus keliling lingkaran 2 x phi x r 
+         7. memasukan hasil dari perhitungan luas lingkaran ke variable hasilKeliling
+         8. menampilkan variable hasilKeliling
+    </pre>
+
+    <!-- code -->
+
+    <h3>Hasil Menghitung Luas dan Keliling Lingkaran</h3>
+
+    <input
+      type="text"
+      name="jari2"
+      id="jari2"
+      placeholder="Masukan Nilai Jari2"
+    />
+
+    <button onclick="hasilLuas()">Luas</button>
+    <button onclick="hasilKeliling()">Keliling</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+      const phi = 3.14;
+
+      function hasilLuas() {
+        let luas = phi * jari2.value * jari2.value;
+        alert(
+          "Hasil dari Luas Lingkaran yang jari2nya " +
+            jari2.value +
+            " = " +
+            luas
+        );
+      }
+
+      function hasilKeliling() {
+        let keliling = 2 * phi * jari2.value;
+        alert(
+          "Hasil dari Keliling Lingkaran yang jari2nya " +
+            jari2.value +
+            " = " +
+            keliling
+        );
+      }
+
+      function reset() {
+        jari2.value = null;
+      }
+    </script>
+  </body>
+</html>
