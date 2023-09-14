@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tipe Data JS</title>
+  </head>
+  <body>
+    <h1>Belajar Tipe Data JS</h1>
+    <!-- output -->
+    <div id="hasil"></div>
+
+    <script>
+      // angka/number
+      var angka = 70;
+      var kalimat = "Belajar JS di Workshop Cibubur";
+      var makanan = ["Oncom", "Tahu", "Tempe", "Kedelai"];
+      var manusia = {
+        nama: "Fikra",
+        asal: "Indonesia",
+        usia: 31,
+      };
+
+      // deklarasi variabel & assign value
+      var dataHasil = document.getElementById("hasil");
+      // output 1. angka
+      dataHasil.innerHTML = `Data Angka: ${angka}`;
+      // output 2. kalimat
+
+      dataHasil.innerHTML += `<br>Data Kalimat: ${kalimat}`;
+
+      // output 3. transport
+      // array [] > 0 s.d panjang data (array)
+      // contoh ["Kucing","Burung","Ikan"] > 0, 1, 2
+      // total 3 data
+      var hasilMakanan = `Ini Makanan : ${makanan[0]} <br>`;
+      dataHasil.innerHTML += `<br>Data Makanan: ${makanan}<br>${hasilMakanan}`;
+
+      // output 4. manusia
+      // object {}
+      var hasilManusia = `Nama: ${manusia.nama} <br>
+                          Asal: ${manusia.asal} <br>
+                          Usia: ${manusia.usia} <br>`;
+      dataHasil.innerHTML += `<br>Data Manusia: ${manusia}<br>${hasilManusia}`;
+    </script>
+  </body>
+</html>

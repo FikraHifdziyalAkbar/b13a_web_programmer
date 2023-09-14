@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Looping di JS</title>
+  </head>
+  <body>
+    <h1>Belajar Looping di JS</h1>
+
+    <button onclick="print()">Print 100 kali</button>
+    <div id="text"></div>
+    <hr />
+    <button onclick="printLagi()">Print 3 kali</button>
+    <div id="text2"></div>
+    <hr />
+    <button onclick="printList()">Print Makanan Kesukaan</button>
+    <ul id="list"></ul>
+    <script>
+      // loop pake while
+      function print() {
+        const dt = document.getElementById("text");
+        let hitung = 0;
+
+        while (hitung < 100) {
+          //kondisi perulangan
+          dt.innerHTML = dt.innerHTML + "<p>Saya tidak akan terlambat lagi<p>";
+          hitung = hitung + 1;
+        }
+      }
+      // loop pake for
+      function printLagi() {
+        const dt = document.getElementById("text2");
+        let hitung = 0;
+
+        for (let hitung = 0; hitung < 3; hitung = hitung + 1) {
+          //kondisi perulangan
+          dt.innerHTML = dt.innerHTML + "<p>Saya sudah belajar loop!<p>";
+        }
+      }
+      // print array
+      function printList() {
+        const dt = document.getElementById("list");
+        const listMakanan = ["Capcay", "Kebab", "Gulai", "Soto"];
+        for (let index = 0; index < listMakanan.length; index = index + 1) {
+          dt.innerHTML = dt.innerHTML + `<li>${listMakanan[index]}</li>`;
+        }
+      }
+    </script>
+  </body>
+</html>

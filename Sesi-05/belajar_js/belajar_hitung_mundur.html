@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Hitung Mundur</title>
+  </head>
+  <body>
+    <h1>Belajar Hitung Maju Mundur dengan JS</h1>
+    <button onclick="btnMundur()">Mundur</button>
+    <button onclick="btnMaju()">Maju</button>
+
+    <div id="hasil">10</div>
+    <script>
+      function btnMundur() {
+        var dataHasil = document.getElementById("hasil");
+        dataHasil.innerHTML--;
+      }
+
+      function btnMaju() {
+        var dataHasil = document.getElementById("hasil");
+        dataHasil.innerHTML++;
+      }
+    </script>
+    <p>
+      Dibuat oleh <em><strong>Fikra Hifdziyal Akbar</strong></em>
+    </p>
+  </body>
+</html>
